@@ -26,7 +26,7 @@ makeCacheMatrix = function(x = matrix()) {
 
         	getInverse <- function() meow
 
-	# This is the output of makeMatrix ( I removed 
+	# This is the output of makeMatrix ( I removed set as I am not using it)
 
         list( get = get,
              setInverse = setInverse ,
