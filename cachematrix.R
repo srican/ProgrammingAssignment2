@@ -3,7 +3,8 @@
 makeCacheMatrix = function(x = matrix()) {
       	meow <- NULL
        
-   # I could not the see the purpose served by set() - and I was able to get the caching to work without set to I commented this function out.
+   # I could not the see the purpose served by set() - and I was able to get the caching to work without set()
+   # I commented this function out.
 	  #set <- function(y) {
         #        x <<- y
         #        meow <<- NULL
@@ -15,7 +16,8 @@ makeCacheMatrix = function(x = matrix()) {
         	get <- function() x
 
 
-	#  setInverse() sets value of the meow to the value of its argument aaaaaarghhh and pushes meow to the parent environment
+	#  setInverse() sets value of the meow to the value of its argument aaaaaarghhh and 
+	#  pushes meow to the parent environment
 	#  We use this to to store the value of the inverse  ( this is done during the first pass)
        
 		setInverse <- function(aaaaaarghhh) meow <<- aaaaaarghhh
