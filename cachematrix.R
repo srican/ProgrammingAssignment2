@@ -3,12 +3,11 @@
 makeCacheMatrix = function(x = matrix()) {
       	meow <- NULL
        
-   # I could not the see the purpose served by set() - and I was able to get the caching to work without set()
-   # I commented this function out.
-	  #set <- function(y) {
-        #        x <<- y
-        #        meow <<- NULL
-        #}
+ 
+	  set <- function(y) {
+                x <<- y
+                meow <<- NULL
+        }
 
 
 	#  get() returns the orginal matrix to the calling function. This is used  when the cached inverse is not available.
